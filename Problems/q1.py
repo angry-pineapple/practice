@@ -28,7 +28,6 @@ def sort(array):
             high -= 1
     return array
 
-
 if __name__ == "__main__":
     array = [1,1,2,0,1,2,0,0,0,1,1,1,1,2,2,2,1,1,1]
     sorted_a= sort(array)
