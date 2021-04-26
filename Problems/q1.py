@@ -1,6 +1,5 @@
 """
 Sort an array of 0’s 1’s 2’s without using extra space or sorting algo
-https://www.youtube.com/watch?v=oaVa-9wmpns&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=2 (Problem link in description)
 """
 def sort(array):
     """
