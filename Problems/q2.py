@@ -48,8 +48,10 @@ def get_missing_and_repeating(arr):
             bucket1.append(i)
         else:
             bucket2.append(i)
+
     # print(f"[Temp+arr]bucket1={bucket1}, Bucket2={bucket2}")
     # Now xor both the buckets, we will get repeating and missing
+
     xor1, xor2 = 0, 0
     for x in bucket1:
         xor1 = xor1 ^ x
