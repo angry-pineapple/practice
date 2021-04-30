@@ -13,6 +13,9 @@ class LinkList():
     def __init__(self):
         self.head = None
 
+    def get_head(self):
+        return self.head
+
     def print_ll(self,head):
         while (head !=None):
             value = head.val
