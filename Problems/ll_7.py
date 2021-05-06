@@ -26,22 +26,12 @@ class ExtendedLinkList(LinkList):
 
     def delete_node(self, node):
         temp = node
-        if temp.next != None:
+        if temp.next is not None:
             temp.val = temp.next.val
             temp.next = temp.next.next
         else:
-            temp = None
+            pass      # rectify here. [If last node is given]
 
-        # if temp.next is None:
-        #     temp.val = None
-        #     return
-        # while temp.next is not None:
-        #     if temp.next.next is None:
-        #         temp.val = temp.next.val
-        #         temp.next =None
-        #         break
-        #     temp.val = temp.next.val
-        #     temp = temp.next
 
 
 if __name__ =="__main__":
