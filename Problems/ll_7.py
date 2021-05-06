@@ -1,7 +1,7 @@
 # Delete a given Node when a node is given. (0(1) solution)
 
 from ll_1 import LinkList, node
-
+import sys
 """
 logic:
 overwrite the value in node to be deleted with the value of next node, move right and repeat.
@@ -26,20 +26,25 @@ class ExtendedLinkList(LinkList):
 
     def delete_node(self, node):
         temp = node
-        if temp.next is None:
-            temp.val = None
-            return
-        while temp.next is not None:
-            if temp.next.next is None:
-                temp.val = temp.next.val
-                temp.next =None
-                break
+        if temp.next != None:
             temp.val = temp.next.val
-            temp = temp.next
+            temp.next = temp.next.next
+        else:
+            temp = None
+
+        # if temp.next is None:
+        #     temp.val = None
+        #     return
+        # while temp.next is not None:
+        #     if temp.next.next is None:
+        #         temp.val = temp.next.val
+        #         temp.next =None
+        #         break
+        #     temp.val = temp.next.val
+        #     temp = temp.next
 
 
 if __name__ =="__main__":
-
     my_ll = ExtendedLinkList()
     ll_node_vals = [1, 2, 3, 4, 5, 6, 7, 8, 9]
     for val in ll_node_vals:
@@ -48,10 +53,14 @@ if __name__ =="__main__":
 
     head = my_ll.get_head()
     my_ll.print_ll(head)
-    index= 7
+    print("\nPlease enter index to delete:",end=" ")
+    index = int(input())
+    if index >= my_ll.length():
+        print("Index out of bounds!!")
+        sys.exit()
     node_to_delete = my_ll.get_ith_node(index)
-    print('\nNode to delete-[',node_to_delete,f'] ...at index={index}, Node-value-[',node_to_delete.val,']')
+    print('\nNode to delete-[', node_to_delete, f'] ...at index={index}, Node-value-[', node_to_delete.val, ']')
     my_ll.delete_node(node_to_delete)
-    head =my_ll.get_head()
+    head = my_ll.get_head()
     print("After deletion-")
     my_ll.print_ll(head)
