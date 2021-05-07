@@ -1,7 +1,7 @@
 # Detect a cycle in Linked List
 """
+[for finding loop, think of hcf concept. minute and hour hand meeting concept.]
 idea:
-[for finding loop, think of hcf concept. minute and hour hand meeting ocncept.]
 
 finding the loop- have slow pointer and a fast pointer, slow_ptr & fast_ptr
                   in the beginning point them to head of the linklist
