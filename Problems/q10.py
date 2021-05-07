@@ -16,6 +16,9 @@ idea (2 was used):
                 pow(x*x,n/2) ; if n%2==0
                 x*pow(x,n-1) ; if n%2==1
                 }
+
+TODO:
+edge case n ==2^31 not handled
 """
 import time
 
@@ -39,7 +42,7 @@ def power(x, n):
 
 
 if __name__ == "__main__":
-    x, n = 2, 2147
+    x, n = 2, -1
     # start = time.time()
     # pw = power_recursion(x, n)
     # end = time.time()
@@ -47,8 +50,8 @@ if __name__ == "__main__":
     # print(f"{x}^{n} = {pw} ... using method 1 took:{method1_time}")
     start = time.time()
     if n < 0:
-        n = abs(n)
-    pw = power(x, n)
+        p = abs(n)
+    pw = power(x, p)
     if n < 0:
         pw = 1/pw
     end = time.time()
