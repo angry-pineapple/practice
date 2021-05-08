@@ -1,4 +1,4 @@
-# Detect a cycle in Linked List
+# Detect and Remove a cycle in Linked List
 """
 [for finding loop, think of hcf concept. minute and hour hand meeting concept.]
 idea:
