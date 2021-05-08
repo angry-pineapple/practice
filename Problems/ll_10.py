@@ -9,8 +9,8 @@ move p1 & p2 by one unit for "to_rotate -1 " times
 here we have, new_end = p1, & new_beginning = p2
 
 keep moving p2 till we reach the end of the linklist, call it old end
-make old_end.next = old_begining
-make self.head = new_begining
+make old_end.next = old_beginning
+make self.head = new_beginning
 make new_end.next = None
 
 EG:
