@@ -241,7 +241,7 @@ Find square of a number without using multiplication or division operators.
 
 
 Day13: (Stack and Queue)
-Implement Stack / Implement Queue
+**Implement Stack / Implement Queue --[Since it's a simple ques, coding is not done for this]
 BFS
 Implement Stack using Queue
 Implement Queue using Stack
@@ -257,7 +257,7 @@ Implement Min Stack
 Rotten Orange (Using BFS)
 
 Day15: (String)
-Reverse Words in a String
+**Reverse Words in a String
 Longest Palindrome in a string
 Roman Number to Integer and vice versa
 Implement ATOI/STRSTR
