@@ -1,6 +1,6 @@
 """
 Kadane’s Algorithm
-
+Find the subarray which has the maximum sum
 """
 def get_max_subarray_sum(arr):
     """
