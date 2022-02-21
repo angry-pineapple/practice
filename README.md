@@ -1,2 +1,2 @@
 # practice
-some DS concepts
+Implemention of some DS concepts after self learning.
