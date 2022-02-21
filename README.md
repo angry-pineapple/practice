@@ -1,2 +1,2 @@
 # practice
-wawawewa
+some DS concepts
